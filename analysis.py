@@ -1,3 +1,7 @@
+"""
+Note: This file was mainly used for exploratory purposes only.
+"""
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -108,7 +112,7 @@ After creating my function, I realise Postal Code is not amongst the columns_to_
 """
 categorical_features = [col for col in df.columns if df[col].dtypes == object and col not in columns_to_drop]
 categorical_features.insert(0,"Postal Code")
-
+print(f"Categorical Features: {categorical_features}")
 """
 Amongst the numerical variables, two (2) of them have similar patterns and can be both predicted.
 Sales and profit represent two variable important to any retailer. Unfortunately, high sales doesn't equal high profit as seen in the first graph.

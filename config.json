@@ -1,0 +1,10 @@
+{
+    "date_features": ["Order Date", "Ship Date"],
+    "numerical_features":["Quantity", "Discount"],
+    "categorical_features":["Postal Code", "Ship Mode", "Customer ID", "Segment", "City", "State", "Region", "Sub-Category", "Product Name"],
+    "param_grid":{
+        "model__n_estimators": [100, 200],
+        "model__learning_rate": [0.01, 0.1, 0.2],
+        "model__max_depth": [3, 4, 5]
+    }
+}
